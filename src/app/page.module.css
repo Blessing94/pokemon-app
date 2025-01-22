@@ -1,0 +1,113 @@
+/* Container for the entire page */
+.pageContainer {
+    padding: 20px;
+}
+
+/* Container for the type buttons, allowing them to wrap and have spacing */
+.typeButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Styling for each type button */
+.typeButton {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 8px 16px; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover effect for type buttons */
+.typeButton:hover {
+    background-color: #007bff; 
+    color: white; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Active state for type buttons */
+.typeButton:active {
+    background-color: #0056b3; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+    transform: translateY(0); 
+}
+
+/* Color when a type button is selected */
+.selectedType {
+    background-color: lightblue;
+}
+
+/* Grid layout for Pokémon display */
+.pokemonGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 45px; 
+    padding: 30px; 
+}
+
+/* Style for each Pokémon card */
+.pokemonCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.pokemonCard p {color: #3498db;}
+/* Hover effect for Pokémon cards */
+.pokemonCard:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Pokémon images */
+.pokemonCard img {
+    max-width: 130px; 
+    margin-bottom: 15px; 
+}
+
+/* Pagination controls */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for pagination buttons */
+.pagination button {
+    padding: 15px 25px; 
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for pagination buttons */
+.pagination button:hover:not(:disabled) {
+    background-color: deepskyblue; 
+}
+
+/* Disabled state for pagination buttons */
+.pagination button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+  
